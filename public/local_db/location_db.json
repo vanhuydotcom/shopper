@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "name": "Landmark 81",
+            "address": "Ward 22, District Binh Thanh, Ho Chi Minh City, Viet Nam",
+            "phone": "098xxxx497",
+            "open_time": "10 am - 10 pm EST, 7 days a week",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.214314001466!2d106.71979661407106!3d10.79489126180622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c45a742e67%3A0x4b5d7cec7bdebb18!2sThe%20Landmark%2081!5e0!3m2!1svi!2s!4v1626933777812!5m2!1svi!2s"
+        },
+        {
+            "name": "Bitexco Financial Tower",
+            "address": "Ward Ben Nghe, District 1, Ho Chi Minh City, Viet Nam",
+            "phone": "0776xxxx97",
+            "open_time": "10 am - 10 pm EST, 7 days a week",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.512696635679!2d106.70220251407085!3d10.771989162222889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f41476fee6b%3A0x15de2e5129cc54f!2zVMOyYSBuaMOgIHTDoGkgY2jDrW5oIEJpdGV4Y28sIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1626934372919!5m2!1svi!2s"
+        },
+        {
+            "name": "Ancient city Ha Noi",
+            "address": "Ward Hang Trong, District Hoan Kiem, Ha Noi Capital, Viet Nam",
+            "phone": "0776xxxx97",
+            "open_time": "10 am - 10 pm EST, 7 days a week",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0212157015894!2d105.84960321420202!3d21.03183709305078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab594f189a15%3A0x1bc12f9ddabd9b0d!2zUGjhu5EgxJBpIELhu5kgSOG7kyBHxrDGoW0gKEhvw6BuIEtp4bq_bSk!5e0!3m2!1svi!2s!4v1626934883076!5m2!1svi!2s"
+        }
+    ]
+}
