@@ -1,12 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { useTranslate } from '../../core/useTranslate'
 import { currency } from '../../util'
+import { addCart } from '../../redux/action/cartAction'
+import { addWishlist } from '../../redux/action/userAction'
 export const Product = () => {
     let { t } = useTranslate()
+    let dispatch = useDispatch()
     let { product_detail } = useSelector(state => state.product)
+    const _addCart = (e) => {
+        e.preventDefault()
+        dispatch(addCart(product_detail[0]))
+    }
+    const _addWishlist = (e) => {
+        e.preventDefault()
+        dispatch(addWishlist(product_detail[0]))
+    }
     return ReactDOM.createPortal(
         <div className="modal fade" id="modalProduct" tabIndex={-1} role="dialog" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered modal-xl" role="document">
@@ -69,25 +80,24 @@ export const Product = () => {
                                     </div>
                                     <div className="form-group mb-0">
                                         <div className="form-row">
-                                            <div className="col-12 col-lg-auto">
-                                                {/* Quantity */}
-                                                <select className="custom-select mb-2">
-                                                    <option value={1} selected>1</option>
-                                                    <option value={2}>2</option>
-                                                    <option value={3}>3</option>
-                                                    <option value={4}>4</option>
-                                                    <option value={5}>5</option>
-                                                </select>
-                                            </div>
-                                            <div className="col-12 col-lg">
+                                            {/* <div className="col-12 col-lg-auto">
+                                            <select className="custom-select mb-2">
+                                                <option value={1} selected>1</option>
+                                                <option value={2}>2</option>
+                                                <option value={3}>3</option>
+                                                <option value={4}>4</option>
+                                                <option value={5}>5</option>
+                                            </select>
+                                        </div> */}
+                                            <div className="col-12 col-lg-7">
                                                 {/* Submit */}
-                                                <button type="submit" className="btn btn-block btn-dark mb-2">
+                                                <button type="submit" className="btn btn-block btn-dark mb-2" onClick={_addCart}>
                                                     {t('Add to Cart')} <i className="fe fe-shopping-cart ml-2" />
                                                 </button>
                                             </div>
-                                            <div className="col-12 col-lg-auto">
+                                            <div className="col-12 col-lg-5">
                                                 {/* Wishlist */}
-                                                <button className="btn btn-outline-dark btn-block mb-2" data-toggle="button">
+                                                <button className="btn btn-outline-dark btn-block mb-2" data-toggle="button" onClick={_addWishlist}>
                                                     {t('Wishlist')} <i className="fe fe-heart ml-2" />
                                                 </button>
                                             </div>
@@ -99,7 +109,7 @@ export const Product = () => {
                     </div>
                 </div>
             </div>
-        </div>,
+        </div >,
         document.getElementById('root')
 
     )
